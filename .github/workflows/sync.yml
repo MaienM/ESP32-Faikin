@@ -1,0 +1,21 @@
+name: Rebase Upstream
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          # Must be larger than the number of commits that need to be rebased.
+          fetch-depth: 10
+
+      - name: Rebase
+        uses: imba-tjd/rebase-upstream-action@master
+        with:
+          branch: main
