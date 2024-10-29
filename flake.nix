@@ -13,11 +13,15 @@
     let
       pkgs = nixpkgs.legacyPackages.${system};
       esp-pkgs = esp.packages.${system};
+      runtimeInputs = with pkgs; [
+        esp-pkgs.esp-idf-full
+
+        python3.pkgs.python-pkcs11
+      ];
     in
     {
       packages =
         let
-
           # curl 'https://components.espressif.com/api/components/${name}' | jq -r '.versions[0].url'
           components = {
             "espressif/led_strip" = pkgs.fetchzip {
@@ -62,7 +66,7 @@
             }
             ''
               # Copy source.
-              cp -r ${./ESP32} src
+              cp -r ${./ESP} src
               chmod -R +w src
               cd src
               if ! [ -e ESP32-BLE-Env ]; then
@@ -105,7 +109,7 @@
               make | tee log
 
               # Take flash command from output and parse it.
-              flash_command="$(grep 'esptool.py .* write_flash .*' log | sed 's/-p (PORT)//')"
+              flash_command="$(grep 'esptool .* write_flash .* *.bin' log | sed 's/-p (PORT)//')"
 
               # Go through flash command arguments and copy any mentioned files to the output.
               mkdir -p $out/firmware
@@ -132,6 +136,7 @@
               done
               sed 's/^  //' > $out/bin/flash <<END
                 #!/usr/bin/env sh
+                PATH="${pkgs.lib.makeBinPath runtimeInputs}:$PATH"
                 image="\''${1:-$(printf '%q' "$app_image")}"
                 exec $(printf ' %q' "''${flash_command_rewritten[@]}")
               END
@@ -150,11 +155,7 @@
           targets;
 
       devShells.default = pkgs.mkShell {
-        packages = with pkgs; [
-          esp-pkgs.esp-idf-full
-
-          python3.pkgs.python-pkcs11
-        ];
+        packages = runtimeInputs;
       };
     });
 }
