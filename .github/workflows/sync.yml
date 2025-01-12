@@ -16,6 +16,13 @@ jobs:
           fetch-depth: 10
 
       - name: Rebase
-        uses: imba-tjd/rebase-upstream-action@master
-        with:
-          branch: main
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com";
+          git config --local user.name  "GitHub Actions";
+
+          git remote add upstream https://github.com/revk/ESP32-Faikin
+          git fetch upstream main
+          git rebase upstream/main
+
+          ORIGIN_URL=$(git remote get-url origin);
+          git push "${ORIGIN_URL/https:\/\//https:\/\/$GITHUB_TOKEN@}" main --force
