@@ -58,7 +58,9 @@
                 };
 
                 targets = {
+                  c3 = "-C3";
                   s3 = "-S3-MINI-N4-R2";
+                  s3n8 = "-S3-MINI-N8";
                   pico = "-S1-PICO";
                   wroom1 = "-S1-V1";
                   wroom = "-S1";
