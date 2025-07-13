@@ -114,7 +114,7 @@
                       )}
 
                       # Create sdkconfig with requested options
-                      make settings.h
+                      make main/settings.h
                       cp sdkconfig.defaults sdkconfig
                       ./components/ESP32-RevK/setbuildsuffix ${suffix}
                       ${pkgs.lib.strings.toShellVar "config_changes" (
