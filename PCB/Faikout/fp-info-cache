@@ -1,4 +1,4 @@
-26702623920579878
+26706189686269185
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95158,6 +95158,13 @@ RevK
 3
 3
 RevK
+7434L0825S01LF
+ISO7816 Socket
+ISO7816
+0
+10
+10
+RevK
 AA
 
 
@@ -95633,6 +95640,13 @@ mounting hole 3.2mm no annular m3 iso7380
 0
 5
 1
+RevK
+ISO7816
+ISO7816 card outline and contacts
+
+0
+10
+8
 RevK
 InvenSense_QFN-24_4x4mm_P0.5mm
 24-Lead Plastic QFN (4mm x 4mm); Pitch 0.5mm; EP 2.7x2.6mm; for InvenSense motion sensors; keepout area marked (Package see: https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf; See also https://www.invensense.com/wp-content/uploads/2015/02/InvenSense-MEMS-Handling.pdf)
