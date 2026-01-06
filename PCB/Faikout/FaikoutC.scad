@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2025-12-10 14:16:46
+// Generated 2026-01-06 14:14:21
 // title:	FAIKOUT
 // rev:	1
 // company:	Adrian Kennard, Andrews & Arnold Ltd
@@ -30,7 +30,7 @@ datey=0.000000;
 datet=0.500000;
 dateh=3.000000;
 datea=0;
-date="2025-12-10";
+date="2025-12-22";
 datef="OCRB";
 logox=-5.000000;
 logoy=0.000000;
@@ -256,7 +256,7 @@ part_C4(part,hole,block);
 part_PCB1(part,hole,block);
 }
 
-parts_top=8;
+parts_top=27;
 module TP10(){translate([-4.125000,4.700000,0.000000])rotate([180,0,0])children();}
 module part_TP10(part=true,hole=false,block=false)
 {
