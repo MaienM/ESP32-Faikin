@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-01-06 14:14:21
+// Generated 2026-01-14 13:06:21
 // title:	FAIKOUT
 // rev:	1
 // company:	Adrian Kennard, Andrews & Arnold Ltd
@@ -30,7 +30,7 @@ datey=0.000000;
 datet=0.500000;
 dateh=3.000000;
 datea=0;
-date="2025-12-22";
+date="2026-01-14";
 datef="OCRB";
 logox=-5.000000;
 logoy=0.000000;
@@ -78,10 +78,10 @@ module J2(){translate([15.000000,0.000000,1.200000])rotate([0,0,-90.000000])chil
 module part_J2(part=true,hole=false,block=false)
 {
 };
-module D1(){translate([0.300000,3.000000,1.200000])rotate([0,0,180.000000])children();}
+module D1(){translate([0.300000,3.000000,1.200000])rotate([0,0,-90.000000])children();}
 module part_D1(part=true,hole=false,block=false)
 {
-translate([0.300000,3.000000,1.200000])rotate([0,0,180.000000])m2(part,hole,block,casetop); // D1
+translate([0.300000,3.000000,1.200000])rotate([0,0,-90.000000])m2(part,hole,block,casetop); // D1
 };
 module V5(){translate([-27.500000,0.000000,1.200000])rotate([0,0,90.000000])children();}
 module part_V5(part=true,hole=false,block=false)
@@ -357,7 +357,7 @@ if(hole)
         hull()
         {
                 b(0,0,0.1,1.5,1.6,0.1);
-                translate([0,0,height-0.5])cylinder(d=1.001,h=0.001,$fn=16);
+                translate([0,0,height])cylinder(d=1.001,h=0.001,$fn=17);
         }
 }
 if(block)
@@ -365,7 +365,7 @@ if(block)
         hull()
         {
                 b(0,0,0.1,3.5,3.6,0.1);
-                translate([0,0,height-0.5])cylinder(d=2,h=1,$fn=16);
+                translate([0,0,height])cylinder(d=2,h=1,$fn=17);
         }
 }
 }
