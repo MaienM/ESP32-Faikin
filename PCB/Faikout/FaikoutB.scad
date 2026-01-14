@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-01-14 13:23:02
+// Generated 2026-01-14 13:33:28
 // title:	FAIKOUT
 // rev:	1
 // company:	Adrian Kennard, Andrews & Arnold Ltd
@@ -148,7 +148,7 @@ module part_FID2(part=true,hole=false,block=false)
 module U1(){translate([0.200000,-1.387500,1.200000])rotate([0,0,90.000000])children();}
 module part_U1(part=true,hole=false,block=false)
 {
-translate([0.200000,-1.387500,1.200000])rotate([0,0,90.000000])m6(part,hole,block,casetop); // U1
+translate([0.200000,-1.387500,1.200000])rotate([0,0,90.000000])m6(part,hole,block,casetop); // RevK:SOT-5x3-6 SOT-563 (back)
 };
 module C3(){translate([4.800000,-3.700000,1.200000])rotate([0,0,-90.000000])children();}
 module part_C3(part=true,hole=false,block=false)
@@ -399,7 +399,7 @@ if(part)
 }
 
 module m6(part=false,hole=false,block=false,height)
-{ // U1
+{ // RevK:SOT-5x3-6 SOT-563
 // SOT-563
 if(part)
 {

@@ -3716,7 +3716,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "RevK:SOT-563"
+			(property "Footprint" "RevK:SOT-5x3-6"
 				(at 1.27 -6.35 0)
 				(effects
 					(font
@@ -7626,7 +7626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevK:SOT-563"
+		(property "Footprint" "RevK:SOT-5x3-6"
 			(at 81.28 177.8 0)
 			(effects
 				(font
