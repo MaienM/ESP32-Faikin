@@ -4759,10 +4759,6 @@
 		(uuid "1e10b5dc-61ce-43a5-99d5-fb462f086090")
 	)
 	(no_connect
-		(at 165.735 46.355)
-		(uuid "22c20253-3faa-4a7d-9582-3902596ad02a")
-	)
-	(no_connect
 		(at 83.82 70.485)
 		(uuid "32455b05-1cbc-4715-871a-7dc4f3228a18")
 	)
@@ -5988,6 +5984,28 @@
 			)
 		)
 	)
+	(global_label "LEDO"
+		(shape output)
+		(at 165.735 46.355 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "817617d5-de0b-4866-b522-c1ade78e2902")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.8436 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BST"
 		(shape passive)
 		(at 92.075 172.72 270)
@@ -6155,6 +6173,28 @@
 		(uuid "f53f69ea-299e-429f-9a35-802eb3f4df05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 180.7509 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LEDO"
+		(shape input)
+		(at 114.3 70.485 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f54e572b-4073-4d2e-9aab-f2af46c2192d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.4086 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9122,73 +9162,6 @@
 			(project "Faikin"
 				(path "/46c350bb-7de4-4e81-aafd-4af55e37aab0"
 					(reference "V1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.3 70.485 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9351e407-1827-40a8-9ff3-d7b5b5171bde")
-		(property "Reference" "#PWR025"
-			(at 120.65 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 117.475 70.485 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db8e89f0-9f39-48b8-8a93-ee0cb166148b")
-		)
-		(instances
-			(project "Faikin"
-				(path "/46c350bb-7de4-4e81-aafd-4af55e37aab0"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
