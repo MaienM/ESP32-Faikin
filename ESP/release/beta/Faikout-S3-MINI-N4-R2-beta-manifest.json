@@ -1,0 +1,28 @@
+{
+  "name":"Faikout Beta",
+  "url": "https://ota.faikout.uk/beta/Faikout-S3-MINI-N4-R2-beta-manifest.json",
+  "chip": "ESP32S3MCN4R2",
+  "id":"Faikout-S3-MINI-N4-R2",
+  "button":false,
+  "setting":{
+	  "beta":true
+  },
+  "flash": [
+    {
+      "url":"https://ota.faikout.uk/beta/Faikout-S3-MINI-N4-R2-bootloader.bin"
+    },
+    {
+      "address": "8000",
+      "url":"https://ota.faikout.uk/Faikout-S3-MINI-N4-R2-partition-table.bin"
+    },
+    {
+      "address": "D000",
+      "url":"https://ota.faikout.uk/Faikout-S3-MINI-N4-R2-ota_data_initial.bin"
+    },
+    {
+      "address": "10000",
+      "url": "https://ota.faikout.uk/Faikout-S3-MINI-N4-R2.bin",
+      "app":true
+    }
+  ]
+}
