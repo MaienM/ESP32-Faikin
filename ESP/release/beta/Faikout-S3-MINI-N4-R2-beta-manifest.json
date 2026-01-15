@@ -9,7 +9,7 @@
   },
   "flash": [
     {
-      "url":"https://ota.faikout.uk/beta/Faikout-S3-MINI-N4-R2-bootloader.bin"
+      "url":"https://ota.faikout.uk/Faikout-S3-MINI-N4-R2-bootloader.bin"
     },
     {
       "address": "8000",
@@ -21,7 +21,7 @@
     },
     {
       "address": "10000",
-      "url": "https://ota.faikout.uk/Faikout-S3-MINI-N4-R2.bin",
+      "url": "https://ota.faikout.uk/beta/Faikout-S3-MINI-N4-R2.bin",
       "app":true
     }
   ]
