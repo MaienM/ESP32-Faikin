@@ -6,6 +6,7 @@
   "setting":{
 	  "otabeta":true
   },
+  "image":"https://ota.faikout.uk/Faikout.png",
   "flash": [
     {
       "url":"https://ota.faikout.uk/Faikout-S3-MINI-N4-R2-bootloader.bin"
