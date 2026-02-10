@@ -5,7 +5,9 @@
   "id":"Faikout-S3-MINI-N4-R2",
   "image":"https://ota.faikout.uk/Faikout.png",
   "setting":{
-	  "beta":true
+	  "ota":{
+		  "beta":true
+	  }
   },
   "image":"https://ota.faikout.uk/Faikout.png",
   "flash": [
