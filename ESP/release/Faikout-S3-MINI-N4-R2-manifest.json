@@ -3,7 +3,6 @@
   "url": "https://ota.faikout.uk/Faikout-S3-MINI-N4-R2-manifest.json",
   "chip": "ESP32S3MCN4R2",
   "id":"Faikout-S3-MINI-N4-R2",
-  "button":false,
   "image":"https://ota.faikout.uk/Faikout.png",
   "flash": [
     {
